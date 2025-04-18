@@ -1,0 +1,13 @@
+.main-component {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 2rem;
+  border-radius: 40px;
+}

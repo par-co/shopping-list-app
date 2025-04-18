@@ -1,0 +1,14 @@
+.header-component {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--text-light);
+  font-size: 2rem;
+  overflow-wrap: anywhere;
+}

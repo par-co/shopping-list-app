@@ -1,0 +1,87 @@
+.shopping-list {
+  list-style-type: none;
+  width: 100%;
+  margin: 1rem auto;
+  max-width: 28rem;
+}
+
+.row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--gold-light);
+}
+
+.row input {
+  grid-column: 1;
+  width: 100%;
+}
+
+.row label {
+  grid-column: 2;
+  width: 100%;
+  font-size: 1.2rem;
+  overflow-wrap: anywhere;
+}
+
+.line-through-false {
+  text-decoration: none;
+}
+
+.line-through-true {
+  text-decoration: line-through;
+}
+
+.delete-btn {
+  grid-column: 3;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  color: var(--text-light);
+  background-color: var(--red);
+  border-radius: 20px;
+  border: 2px solid var(--red);
+  cursor: pointer;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
+.delete-btn:hover {
+  background-color: var(--red-light);
+}
+
+.delete-btn:active {
+  background-color: var(--background-light);
+  color: var(--red);
+}
+
+@media (max-width: 350px) {
+  .row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 1rem;
+  }
+
+  .row input {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .row label {
+    grid-column: 2;
+    grid-row: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .delete-btn {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+}

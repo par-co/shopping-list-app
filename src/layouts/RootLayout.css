@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --red: rgb(240, 0, 10);
+  --red-light: rgb(241, 25, 34);
+  --green: rgb(30, 140, 30);
+  --green-light: rgb(52, 151, 52);
+  --background-dark: black;
+  --background-light: white;
+  --text-dark: black;
+  --text-light: white;
+  --gold: gold;
+  --gold-light: rgb(255, 238, 140);
+  --gray: gray;
+  --empty: rgb(240, 0, 10);
+  --duplicate: rgb(0, 165, 255);
+  --success: rgb(30, 140, 30);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", serif, Arial;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif, Arial;
+  background-color: var(--background-dark);
+}
+
+.root-layout {
+  width: 100%;
+  margin: 0 auto;
+}
